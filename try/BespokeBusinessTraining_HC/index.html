@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bespoke Business Training</title>
+<link rel="icon" type="image/png" href="img/leader-img.jpg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/css/front-page.css">
+<!-- DM SANS FONT -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+<header>
+
+  <!-- Header for mobile -->
+  <div class="header-inner">
+    <div class="logo">
+      <a href="#"><img src="img/nav_logo.svg" alt="Logo" class="logo"></a>
+    </div>
+
+    <div class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+
+    <div class="close-icon" id="closeBtn"></div>
+  </div>
+
+
+  <!-- BLUR OVERLAY for mobile header -->
+  <div class="head-overlay" id="overlay"></div>
+
+  <!-- Dropdown Menu for Mobile Navigation -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="menu-title">
+      <a href="#" style="color:#142F53">Training Courses</a> <img src="img/footer-arrow.svg" class="light-green-arrow">
+    </div>
+
+    <div class="menu-title" onclick="toggleDropdown('aboutDrop','aboutArrow')">
+      <a href="#" style="color:#142F53">About Us</a> <img src="img/footer-arrow.svg" class="light-green-arrow">
+      <img class="dropdown-arrow" id="aboutArrow" src="img/dropdown_arrow.svg">
+    </div>
+
+    <div class="dropdown" id="aboutDrop">
+      <ul>
+        <li><div class="square"></div><a href="#" style="color:#142F53">Why Choose Us?</a></li>
+        <li><div class="square"></div><a href="#" style="color:#142F53">Our Team</a></li>
+        <li><div class="square"></div><a href="#" style="color:#142F53">How We Work</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-title" onclick="toggleDropdown('resourcesDrop','resourcesArrow')">
+      <a href="#" style="color:#142F53">Resources</a> <img src="img/footer-arrow.svg" class="light-green-arrow">
+      <img class="dropdown-arrow" id="resourcesArrow" src="img/dropdown_arrow.svg">
+    </div>
+
+    <div class="dropdown" id="resourcesDrop">
+      <ul>
+        <li><div class="square"></div><a href="#" style="color:#142F53">Blog / Insights</a></li>
+        <li><div class="square"></div><a href="#" style="color:#142F53">Free Guide</a></li>
+        <li><div class="square"></div><a href="#" style="color:#142F53">Leadership Guide</a></li>
+        <li><div class="square"></div><a href="#" style="color:#142F53">Newsletter</a></li>
+      </ul>
+    </div>
+
+    <div class="phone-btn">
+      <img class="phone-icon"
+        src="img/phone_img.svg">
+      239200-6926
+    </div>
+
+    <div class="contact-btn">
+      Contact Us
+      <img class="contact-arrow"
+        src="img/button_arrow-skyblue.svg">
+    </div>
+  </div>
+
+  <!-- Desktop-Header -->
+
+<div class="desktop-header">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="nav-logo">
+      <a href="#"><img src="img/nav_logo.svg" alt="Bespoke Logo" class="desk-logo"></a>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav-menu">
+      <ul>
+        <li class="nav-item"><a href="#" style="color:#fff">Training Courses</a></li>
+
+        <!-- ABOUT -->
+        <li class="nav-item has-mega">
+          <a href="#" style="color:#fff">About Us</a>
+          <img src="img/menu_arrow.svg" class="nav-arrow">
+
+          <div class="mega-menu">
+            <div class="mega-left">
+
+              <div class="mega-col">
+                <h4>About Us</h4>
+                <p class="about-p">Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+                <button class="outline-btn">Learn More About Us<img src="img/button_arrow.svg"></button>
+              </div>
+
+              <div class="mega-col">
+                <h4><a href="#" style="color:#142F53">Why Choose Us?</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+
+                <h4 class="mega-our-team"><a href="#" style="color:#142F53">Our Team</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+              </div>
+
+              <div class="mega-col">
+                <h4><a href="#" style="color:#142F53">How We Work</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+              </div>
+
+              <div class="mega-divider"></div>
+            </div>
+
+            <div class="mega-right">
+              <img src="/img/blank.png" alt="blank" class="guide-img">
+              <h4>Leadership Guide</h4>
+              <p>Get Richard’s top 15 leadership and management tips, a practical guide you can use right away.</p>
+              <a href="#" class="mega-right link">Explore Freebies <img src="img/button_arrow-skyblue.svg"></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- RESOURCES -->
+        <li class="nav-item has-mega">
+          <a href="#" style="color:#fff">Resources</a>
+          <img src="img/menu_arrow.svg" class="nav-arrow">
+
+          <div class="mega-menu">
+            <div class="mega-left">
+
+              <div class="mega-col">
+                <h4>Resouces</h4>
+                <p class="about-p">Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+                <button class="outline-btn">Explore our Resources<img src="img/button_arrow.svg"></button>
+              </div>
+
+              <div class="mega-col">
+                <h4><a href="#" style="color:#142F53">Blogs</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+
+                <h4 class="mega-our-team"><a href="#" style="color:#142F53">Upcoming Book</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+              </div>
+
+              <div class="mega-col">
+                <h4><a href="#" style="color:#142F53">Leadership Guide</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+
+                <h4 class="mega-our-team"><a href="#" style="color:#142F53">Newsletter</a><img src="img/footer-arrow.svg"></h4>
+                <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+              </div>
+
+              <div class="mega-divider"></div>
+            </div>
+
+            <div class="mega-right">
+              <img src="/img/blank.png" alt="blank" class="guide-img">
+              <h4>Leadership Guide</h4>
+              <p>Get Richard’s top 15 leadership and management tips, a practical guide you can use right away.</p>
+              <a href="#" class="mega-right link">Explore Freebies <img src="img/button_arrow-skyblue.svg"></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="#" style="color:#fff">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- PHONE -->
+    <div class="nav-phone">
+      <img src="img/phone_img.svg" class="nav-phone-icon">
+      239200-6926
+    </div>
+
+  </div>
+</div>  
+
+
+</header>
+
+<div class="main">
+
+<section class="sec1">
+  <div class="container container-small_device container_1200">
+
+    <div class="sec1-txt">
+      <h1>Tailored Management and Leadership Training in the UK</h1>
+      <p>For nearly 10 years, we’ve partnered with organisations to deliver bespoke, practical training that helps managers grow their skills and lead more effective teams.</p>
+      <div class="sec1-btn_wrap">
+        <a class="btn primary" href="#">
+          Explore Training Courses
+          <img src="img/button_arrow.svg" class="arrow" alt="Dark Blue Arrow">
+        </a>
+        <a class="btn ghost" href="#">
+          Lets Talk
+          <img src="img/button_arrow-skyblue.svg" class="arrow" alt="Sky Blue Arrow">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <img class="sec1-img" src="/img/sec1-img.png" alt="Richard Providing Training">
+</section>
+
+<section class="stats-section">
+  <div class="container container-small_device container_1200">
+
+    <!-- eyebrow -->
+    <div class="eyebrow center darkbg">
+      <div class="eyebrow-txt">Real Results. Lasting Impact.</div>
+      <div class="eyebrow-line"></div>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="stats-container">
+
+      <!-- 1 -->
+      <div class="stat-box">
+          <div class="stat-number" data-target="95"><span class="num">0</span><span class="suffix" style="color: #BFD730;">%</span></div>
+          <div class="stat-desc">
+            Delegates rated our trainers and courses Excellent or Very Good
+          </div>
+      </div>
+
+      <div class="stat-div"></div>
+      
+      <!-- 2 -->
+      <div class="stat-box">
+        <div class="stat-number" data-target="4500"><span class="num">0</span><span class="suffix" style="color: #BFD730;">+</span></div>
+        <div class="stat-desc">
+          Managers trained across the UK, Europe & the Arabian Gulf
+        </div>
+      </div>
+      
+      <div class="stat-div"></div>
+
+      <!-- 3 -->
+      <div class="stat-box">
+          <div class="stat-number" data-target="100"><span class="num">0</span><span class="suffix" style="color: #BFD730;">%</span></div>
+          <div class="stat-desc">
+            Delegates who would recommend our courses to colleagues
+          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="challenges">
+  <div class="container container-small_device container_1200">
+
+    <h2 class="challenges-h">Do these challenges sound familiar?</h2>
+    <div class="challenges-grid">
+
+      <div class="challenge">
+        <img class="challenge-icon" src="/img/challenges-icon.svg" alt="Warning icon">
+        <h3 class="challenge-h">Are your managers struggling to lead?</h3>
+        <p class="challenge-p">They’re skilled at their jobs but not at leading people. Delegation, feedback, and motivation don’t come easily, causing stress and confusion.</p>
+      </div>
+      <div class="challenge">
+        <img class="challenge-icon" src="/img/challenges-icon.svg" alt="Warning icon">
+        <h3 class="challenge-h">Tired of training that doesn’t change anything?</h3>
+        <p class="challenge-p">You’ve invested in programmes before, but the impact fades fast. Old habits return, and nothing really changes where it matters most.</p>
+      </div>
+      <div class="challenge">
+        <img class="challenge-icon" src="/img/challenges-icon.svg" alt="Warning icon">
+        <h3 class="challenge-h">Is unclear communication slowing your teams down?</h3>
+        <p class="challenge-p">Managers avoid tough talks or fail to connect. A simple conversation could fix so much, yet it keeps being pushed aside.</p>
+      </div>
+      <div class="challenge">
+        <img class="challenge-icon" src="/img/challenges-icon.svg" alt="Warning icon">
+        <h3 class="challenge-h">Do your teams feel uninspired or drained?</h3>
+        <p class="challenge-p">Collaboration feels forced, morale is low, and even top performers seem disengaged. You’re craving stronger connection and purpose.</p>
+      </div>
+      <div class="challenge">
+        <img class="challenge-icon" src="/img/challenges-icon.svg" alt="Warning icon">
+        <h3 class="challenge-h">Does every change feel like a setback?</h3>
+        <p class="challenge-p">When things shift, managers react instead of lead. Change creates tension instead of growth, and confidence takes a backseat.</p>
+      </div>
+      <div class="challenge">
+        <img class="challenge-icon" src="/img/challenges-icon.svg" alt="Warning icon">
+        <h3 class="challenge-h">Losing great people because of poor leadership?</h3>
+        <p class="challenge-p">Talented employees keep leaving, not because of the company, but because of the managers guiding them day to day.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="leaderships">
+  <div class="leadership">
+    <img src="/img/line-texture.png" alt="white_linen_texture 1-img" class="lead-back-img">
+    <div class=" container container-small_device container_1200">
+      <div class="eyebrow left">
+        <div class="eyebrow-txt">Practical Training. Real Results. Lasting Change.</div>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="lead-h">Here’s how we help managers lead with confidence.</h2>
+      <p class="lead-txt">Every organization faces different challenges, that’s why our management and leadership training is tailored to fit your culture, your goals, and your people.</p>
+      <p class="lead-p">We help leaders grow through these core programmes:</p>
+      <div class="lead-btn-grid">
+        <a href="#" class="lead-btn">Leadership for Managers <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">Leading & Managing Change <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">Leadership Skills for Supervisors <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">Developing a Highly Effective Team <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">Improving Employee Engagement <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">Emotional Intelligence for Managers <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">Train the Technical Trainer <img src="img/button_arrow-skyblue.svg"></a>
+        <a href="#" class="lead-btn">View all Training Courses <img src="img/button_arrow-skyblue.svg"></a>
+      </div>
+    </div>
+  </div>
+  <img src="/img/leader-img.jpg" alt="leader-img" class="lead-img">
+</section>
+ 
+<section class="bespokes">
+  <div class="container container-small_device container_1200">
+    <div class="eyebrow center">
+      <div class="eyebrow-txt">What You Get</div>
+      <div class="eyebrow-line"></div>
+    </div>
+    <h2 class="bespokes-h">Bespoke training, delivering what you want</h2>
+    <p class="bespokes-p">Interactive, practical sessions designed around your goals, available in-person, online, or as blended workshops.</p>
+    <img class="bespoke-img" src="/img/bespoke-trainer-img.jpg" alt="bespoke-trainer-img">
+
+    <div class="sessions-grid">
+      <div class="sessions">
+        <img class="session-img" src="/img/correct-tick.svg" alt="correct-tick">
+        <h4 class="session-h">In-person and live-virtual training</h4>
+        <p class="session-p">Interactive sessions with real discussions and instant feedback.</p>
+      </div>
+      <div class="sessions">
+        <img class="session-img" src="/img/correct-tick.svg" alt="correct-tick">
+        <h4 class="session-h">Tailored to Your Organisation</h4>
+        <p class="session-p">Custom-built programmes shaped around your goals and culture.</p>
+      </div>
+      <div class="sessions">
+        <img class="session-img" src="/img/correct-tick.svg" alt="correct-tick">
+        <h4 class="session-h">Post-Training Coaching & Support</h4>
+        <p class="session-p">Follow-ups that help managers apply what they’ve learned.</p>
+      </div>
+      <div class="sessions">
+        <img class="session-img" src="/img/correct-tick.svg" alt="correct-tick">
+        <h4 class="session-h">Flexible Delivery Formats</h4>
+        <p class="session-p">Run on-site or online, designed to fit your schedule.</p>
+      </div>
+    </div>
+
+    <div class="btn-center">
+      <a class="btn primary" href="#">
+        Explore Training Programmes
+        <img src="img/button_arrow.svg" class="arrow" alt="Dark Blue Arrow">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- IMPORTANT FIX: use ONE class attribute -->
+<section class="testimonial swiper mySwiper">
+  <img src="img/diagonal-img.png" class="test-diag-top">
+
+  <div class="parallax-bg testimonial-bg"
+       style="background-image: url('/img/testimonial-img.jpg');">
+  </div>
+
+  <div class="testimonial-overlay"></div>
+
+  <!-- SWIPER WRAPPER (must be direct child) -->
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="container container-small_device container_1200">
+        <div class="testimonial-content">
+          <p class="testimonial-text" data-swiper-parallax="-300">
+            “I really enjoyed a five-day Leadership Development program delivered by Richard in Dubai, in July 2019 - and found this course very useful and interesting. The content was very structural and covered the essential skills needed for modern managers motivating for a further self-study upon your needs on different topics. I definitely recommend this training for new managers and those who need to develop their "must-have" manager skills, and recommend Richard as a highly professional trainer.”
+          </p>
+          <p class="testimonial-author" data-swiper-parallax="-200">
+            Liudmyla Stepanenko, Financial Planning Manager | GBM
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="container container-small_device container_1200">
+        <div class="testimonial-content">
+          <p class="testimonial-text" data-swiper-parallax="-300">
+            “I really enjoyed a five-day Leadership Development program delivered…”
+          </p>
+          <p class="testimonial-author" data-swiper-parallax="-200">
+            Liudmyla Stepanenko, Financial Planning Manager | GBM
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="container container-small_device container_1200">
+        <div class="testimonial-content">
+          <p class="testimonial-text" data-swiper-parallax="-300">
+            “I really enjoyed a five-day Leadership Development program delivered…”
+          </p>
+          <p class="testimonial-author" data-swiper-parallax="-200">
+            Liudmyla Stepanenko, Financial Planning Manager | GBM
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <img src="img/diagonal-img.png" class="test-diag-bottom">
+</section>
+
+<section class="complogo">
+  <div class="container container-small_device container_1200">
+
+    <h2 class="complogo-h">Training trusted by many organisations worldwide</h2>
+    <p class="complogo-p">Our trainers have supported 120+ organisations across multiple sectors with bespoke, hands-on training that helps managers strengthen communication, build confidence, and lead more effectively.</p>
+    <div class="complogo-grid">
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-1.png" alt="Panzers"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-2.png" alt="Almarai"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-3.png" alt="Sharp"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-4.png" alt="Visa"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-5.png" alt="Schindler"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-6.png" alt="Southern Water"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-7.png" alt="GBM"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-8.png" alt="Volvo"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-9.png" alt="Unloc"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-10.png" alt="CEMEX"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-11.png" alt="Crane"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-12.png" alt="Innovate Tax"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-13.png" alt="Six Construct"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-14.png" alt="Nadec"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-15.png" alt="AMG Group"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-16.png" alt="Goldman Sachs"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-17.png" alt="National Auto"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-18.png" alt="IWC"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-19.png" alt="Johnson Controls"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-20.png" alt="PwC"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-21.png" alt="Dans"></div>
+      <div class="complogo-img_wrap"><img class="complogo-logo" src="/img/logo-22.png" alt="European Investment Bank"></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="resourse-sec">
+  <div class="container container-small_device container_1200">
+
+    <h2 class="res-title">Resources to explore</h2>
+
+    <div class="res-grid">
+
+      <!-- Card 1 -->
+      <div class="res-card">
+        <img class="res-img" src="/img/blank.png" alt="blank">
+        <div class="res-box">
+          <div class="res-box-wrap">
+            <h3 class="res-h">Blogs</h3>
+            <p class="res-p">Read practical articles on leadership, management, and engagement.</p>
+          </div>
+          <a href="#" class="res-link">Read Blog Posts<img src="img/button_arrow-skyblue.svg" alt="arrow-skyblue" class="res-arrow"></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="res-card">
+        <img class="res-img" src="/img/blank.png" alt="blank">
+        <div class="res-box">
+          <div class="res-box-wrap">
+            <h3 class="res-h">Leadership Guide</h3>
+            <p class="res-p">Get Richard’s top 15 leadership and management tips, a practical guide you can use right away.</p>
+          </div>
+          <a href="#" class="res-link">Explore Freebies <img src="img/button_arrow-skyblue.svg" alt="arrow-skyblue" class="res-arrow"></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="res-card">
+        <img class="res-img" src="/img/blank.png" alt="blank">
+        <div class="res-box">
+          <div class="res-box-wrap">
+            <h3 class="res-h">Upcoming Book</h3>
+            <p class="res-p">Richard’s new book on practical leadership development, drawn from his 20+ years of experience.</p>
+          </div>
+          <a href="#" class="res-link">Get Notified <img src="img/button_arrow-skyblue.svg" alt="arrow-skyblue" class="res-arrow"></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="res-card">
+        <img class="res-img" src="/img/blank.png" alt="blank">
+        <div class="res-box">
+          <div class="res-box-wrap">
+            <h3 class="res-h">Newsletter</h3>
+            <p class="res-p">Quarterly insights, case studies, and training updates delivered straight to your inbox.</p>
+          </div>
+          <a href="#" class="res-link">Coming Soon <img src="img/button_arrow-skyblue.svg" alt="arrow-skyblue" class="res-arrow"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="resourse-sec-bg"></div>
+</section>
+
+
+<!-- Contact us -->
+<section class="pre-footer">
+  <div class="pre-foot-wrapper">
+    <img src="img/contact-img.jpg" alt="pre-foot-img" class="pre-foot-img">
+    <div class="pre-foot-div">
+      <h2 class="pre-foot-h">Let’s talk about your leadership goals.</h2>
+      <p class="pre-foot-p">We deliver practical, results-focused training that transforms managers into confident leaders. Let’s talk about what your organisation needs most.</p>
+      <div class="btn-pre-foot">
+        <a class="btn primary" href="#">
+          Contact Us
+          <img src="img/button_arrow.svg" class="arrow" alt="Dark Blue Arrow">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pre-foot-darkbg"></div>
+</section>
+
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container container-small_device container_1200">
+
+    <!-- Top Row: Logo + Buttons -->
+    <div class="ft-top">
+      <a href="#">
+        <img src="img/nav_logo.svg" alt="Bespoke Logo" class="ft-logo">
+      </a>
+      <div class="ft-top-div"></div>
+      <div class="ft-top-btns">
+        <a href="#" class="ft-btn">Contact Us</a>
+        <a href="#" class="ft-call">
+          <img src="/img/footer-phone-img.svg" alt="call" class="ft-call-img"> 239200–6926
+        </a>
+      </div>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="ft-grid">
+        <div class="ft-col ft-courses">
+          <a href="#"><h4>Our Training Courses in the UK <img src="/img/footer-arrow.svg" class="ft-arrow"></h4></a>
+          <ul>
+            <li><a href="#">Leadership For Managers</a></li>
+            <li><a href="#">Leading & Managing Change</a></li>
+            <li><a href="#">Improving Employee Engagement</a></li>
+            <li><a href="#">Developing a Highly Effective Team</a></li>
+            <li><a href="#">Developing a Succession Planning Programme</a></li>
+            <li><a href="#">Understanding & Developing Emotional Intelligence</a></li>
+            <li><a href="#">Leadership Skills for Supervisors</a></li>
+            <li><a href="#">Delegating Effectively & Empowering Employees</a></li>
+            <li><a href="#">Giving Performance Reviews & Appraisals</a></li>
+            <li><a href="#">Effective Communication Skills for Managers</a></li>
+            <li><a href="#">Presentation Skills for Managers</a></li>
+            <li><a href="#">Train the Technical Trainer</a></li>
+          </ul>
+        </div>
+
+      <div class="ft-col ft-about">
+        <a href="#"><h4>About Us <img src="/img/footer-arrow.svg" class="ft-arrow"></h4></a>
+        <ul>
+          <li><a href="#">Why Choose Us?</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">How We Work</a></li>
+        </ul>
+
+        <a href="#"><h4 class="ft-col-mt">Helpful Resources <img src="/img/footer-arrow.svg" class="ft-arrow"></h4></a>
+        <ul>
+          <li><a href="#">Blog / Insights</a></li>
+          <li><a href="#">Free Guide</a></li>
+          <li><a href="#">Leadership Guide</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col ft-cities">
+        <a href="#"><h4>Cities <img src="/img/footer-arrow.svg" class="ft-arrow"></h4></a>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Manchester</a></li>
+          <li><a href="#">Birmingham</a></li>
+          <li><a href="#">Leeds</a></li>
+          <li><a href="#">Glasgow</a></li>
+          <li><a href="#">Edinburgh</a></li>
+          <li><a href="#">Bristol</a></li>
+          <li><a href="#">Liverpool</a></li>
+          <li><a href="#">Nottingham</a></li>
+          <li><a href="#">Sheffield</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col ft-address">
+        <a href="#"><h4>Address</h4></a>
+        <div>
+          <p>Bespoke Business Training Ltd (Company No. 11897978) is registered in the United Kingdom.</p>
+          <p>Unit 30, Highcroft Industrial Estate, Horndean, Hampshire. PO8 0BT, United Kingdom</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="ft-bottom-div"></div>
+    <div class="ft-bottom">
+      <p>Copyright © 2025 Bespoke Business Training Ltd. All Rights Reserved.</p>
+      <div class="ft-links">
+        <a href="#">Privacy Policy</a>
+        <div class="ft-links-div"></div>
+        <a href="#">Sitemap</a>
+        <div class="ft-links-div"></div>
+        <p>Website by</p><a href="#"> Mayank Singh</a>
+      </div>
+      <div class="ft-social">
+        <img src="img/facebook.svg" alt="Facebook">
+        <img src="img/linkedln.svg" alt="LinkedIn">
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js">
+
+</script>
+
+</body>
+</html>
