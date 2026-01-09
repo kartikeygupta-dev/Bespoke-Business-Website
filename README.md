@@ -9,7 +9,7 @@ The project focuses on accurate design implementation, responsive layout, and pr
 ## 🚀 Live Demo
 
 🔗 Website: https://bespokebusiness-training.netlify.app/  
-🔗 GitHub Repository: https://github.com/your-username/bespoke-business
+🔗 GitHub Repository: https://github.com/kartikeygupta-dev/Bespoke-Business-Website.git
 
 ---
 
@@ -75,6 +75,6 @@ Mobile-first and responsive design techniques are applied.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/kartikey-dev/bespoke-business.git
+   git clone https://github.com/kartikeygupta-dev/Bespoke-Business-Website.git
 
 
